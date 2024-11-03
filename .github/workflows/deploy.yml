@@ -15,7 +15,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # Vous pouvez changer cela selon la version requise
+          node-version: '20'  # Utiliser Node.js 20
 
       - name: Install dependencies
         run: npm install
@@ -28,3 +28,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist  # Répertoire à publier
+
